@@ -10,17 +10,17 @@
 
 # 画面イメージ
 ## ログイン画面
-![ログイン画面](/doc/img/LoginView.PNG) 
+![ログイン画面](/doc_img/LoginView.PNG) 
 ## メイン画面
-![メイン画面](/doc/img/MainView.PNG) 
+![メイン画面](/doc_img/MainView.PNG) 
 ## プロフィール画面
-![プロフィール画面](/doc/img/ProfileView.PNG) 
+![プロフィール画面](/doc_img/ProfileView.PNG) 
 ## ユーザ検索画面(初期)
-![ユーザ検索画面(初期)](/doc/img/SearchUserView_init.PNG) 
+![ユーザ検索画面(初期)](/doc_img/SearchUserView_init.PNG) 
 ## ユーザ検索画面(成功時)
-![ユーザ検索画面(成功時)](/doc/img/SearchUserView_success.PNG) 
+![ユーザ検索画面(成功時)](/doc_img/SearchUserView_success.PNG) 
 ## ユーザ検索画面(失敗時)
-![ユーザ検索画面(失敗時)](/doc/img/SearchUserView_failure.PNG) 
+![ユーザ検索画面(失敗時)](/doc_img/SearchUserView_failure.PNG) 
 
 # 実装機能
 ## ログイン画面
@@ -39,3 +39,4 @@
 
 # 追加予定機能
 - チャット機能とか
+
