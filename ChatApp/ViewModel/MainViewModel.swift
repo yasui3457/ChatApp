@@ -11,8 +11,6 @@ import Combine
 import Firebase
 
 class MainViewModel: ObservableObject, Identifiable {
-    
-    //@EnvironmentObject var session: Session
 
     var myInfo: User
     @Published var friends: [Friend]

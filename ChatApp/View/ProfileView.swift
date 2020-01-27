@@ -18,26 +18,32 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             HStack {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text(myInfo.name)
+                List {
+                    Text(myInfo.name + "さん")
                         .bold()
                         .font(.title)
+                    
+                    NavigationLink(destination: SearchUserView(viewModel: SearchUserViewModel())
+                        .environmentObject(self.session)) {
+                        Text("友達検索")
+                            .foregroundColor(.white)
+                    }
+                    
                     Button(action: {
                         self.session.signOut()
                     }) {
                         Text("サインアウト")
-                        .foregroundColor(.white)
+                            .foregroundColor(.white)
                     }
-                    Spacer()
                 }
-                Spacer()
             }
-
-                
             .navigationBarTitle(Text("User"), displayMode: .inline)
-                .navigationBarItems(trailing: Button("Close") {
-                    self.showingProfile = false
-                })
+            .navigationBarItems(trailing: Button(action: {
+                self.showingProfile = false
+            }){
+                Image(systemName: "xmark")
+                    .foregroundColor(.white)
+            })
         }
     }
 }

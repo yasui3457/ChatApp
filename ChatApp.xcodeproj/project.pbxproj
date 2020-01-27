@@ -22,6 +22,8 @@
 		A0C67AC923DD8C190082C3ED /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C67AC823DD8C190082C3ED /* ProfileViewModel.swift */; };
 		A0C67ACD23DD970F0082C3ED /* UserInfoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C67ACC23DD970F0082C3ED /* UserInfoManager.swift */; };
 		A0C67ACF23DDA8EB0082C3ED /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C67ACE23DDA8EB0082C3ED /* Friend.swift */; };
+		A0C67AD123DF0E480082C3ED /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C67AD023DF0E480082C3ED /* SearchUserView.swift */; };
+		A0C67AD323DF109A0082C3ED /* SearchUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C67AD223DF109A0082C3ED /* SearchUserViewModel.swift */; };
 		A0E46E4223DD6B40001E30ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E46E4123DD6B40001E30ED /* AppDelegate.swift */; };
 		A0E46E4423DD6B40001E30ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E46E4323DD6B40001E30ED /* SceneDelegate.swift */; };
 		A0E46E4623DD6B40001E30ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E46E4523DD6B40001E30ED /* ContentView.swift */; };
@@ -69,6 +71,8 @@
 		A0C67AC823DD8C190082C3ED /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		A0C67ACC23DD970F0082C3ED /* UserInfoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoManager.swift; sourceTree = "<group>"; };
 		A0C67ACE23DDA8EB0082C3ED /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		A0C67AD023DF0E480082C3ED /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
+		A0C67AD223DF109A0082C3ED /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
 		A0E46E3E23DD6B40001E30ED /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0E46E4123DD6B40001E30ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0E46E4323DD6B40001E30ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +136,7 @@
 				A0C67AC023DD749B0082C3ED /* LoginVIewModel.swift */,
 				A0C67AC423DD77D70082C3ED /* MainViewModel.swift */,
 				A0C67AC823DD8C190082C3ED /* ProfileViewModel.swift */,
+				A0C67AD223DF109A0082C3ED /* SearchUserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 				A0C67ABC23DD73490082C3ED /* RootView.swift */,
 				A0C67ABE23DD73B30082C3ED /* MainView.swift */,
 				A0C67AC623DD7D590082C3ED /* ProfileView.swift */,
+				A0C67AD023DF0E480082C3ED /* SearchUserView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -481,6 +487,7 @@
 				A0C67ABF23DD73B30082C3ED /* MainView.swift in Sources */,
 				A0C67AC523DD77D70082C3ED /* MainViewModel.swift in Sources */,
 				A0E46E4223DD6B40001E30ED /* AppDelegate.swift in Sources */,
+				A0C67AD323DF109A0082C3ED /* SearchUserViewModel.swift in Sources */,
 				A0C67ABB23DD72D70082C3ED /* User.swift in Sources */,
 				A0E46E4423DD6B40001E30ED /* SceneDelegate.swift in Sources */,
 				A0C67AC923DD8C190082C3ED /* ProfileViewModel.swift in Sources */,
@@ -488,6 +495,7 @@
 				A0C67AB923DD72300082C3ED /* LoginView.swift in Sources */,
 				A0C67AC123DD749B0082C3ED /* LoginVIewModel.swift in Sources */,
 				A0C67AC723DD7D590082C3ED /* ProfileView.swift in Sources */,
+				A0C67AD123DF0E480082C3ED /* SearchUserView.swift in Sources */,
 				A0C67ACD23DD970F0082C3ED /* UserInfoManager.swift in Sources */,
 				A0E46E4623DD6B40001E30ED /* ContentView.swift in Sources */,
 			);

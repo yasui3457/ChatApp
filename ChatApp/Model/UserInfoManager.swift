@@ -10,6 +10,10 @@ import Foundation
 import Combine
 import Firebase
 
+enum UserError: Error {
+    case noUserId
+}
+
 final class UserInfoManager {
     
     var db: Firestore!
@@ -56,5 +60,30 @@ final class UserInfoManager {
         }
     }
     
+    func searchUser(userId: String) -> Future<User, Error> {
+        return Future<User, Error> {promise in
+            var user = User()
+            self.db.collection("users").whereField("userId", isEqualTo: userId)
+                .getDocuments(){(querySnapshot, err) in
+                    print("getMyInfo in.")
+                    if querySnapshot!.documents.count != 0 {
+                        for val in querySnapshot!.documents {
+                            print(val)
+                            user.email = val.get("email") as! String
+                            user.name = val.get("name") as! String
+                            user.userId = val.get("userId") as! String
+                        }
+                        promise(.success(user))
+                    } else {
+                        promise(.failure(UserError.noUserId))
+                    }
+            }
+        }
+    }
+    
+    func addFriend(email: String, friend: User) {
+        var data = ["status": false, "userId": friend.userId] as [String : Any]
+        self.db.collection("users").document(email).collection("friends").addDocument(data: data)
+    }
 
 }

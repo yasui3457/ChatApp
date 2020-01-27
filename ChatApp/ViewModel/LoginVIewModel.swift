@@ -8,7 +8,6 @@
 
 import SwiftUI
 import Combine
-import Firebase
 
 class LoginViewModel: ObservableObject, Identifiable {
     @Published var email: String;
